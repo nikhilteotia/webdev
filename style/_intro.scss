@@ -1,0 +1,41 @@
+.intro {
+  position: relative;
+}
+
+.subtitle_intro {
+  margin-bottom: 1em;
+  padding: 0.25em 1em;
+  background-color: $color-main;
+}
+
+//-------------------->>600 px and above
+@media (min-width: 600px) {
+  .intro {
+    display: grid;
+    width: min-content;
+    margin: 0rem auto;
+    grid-column-gap: 1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+
+    grid-template-columns: min-content max-content;
+  }
+
+  .intro_img {
+    grid-area: img;
+    min-width: 250px;
+    position: relative;
+    z-index: 2;
+  }
+
+  .subtitle_intro {
+    align-self: start;
+    grid-column: -1 / 1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 2em);
+  }
+}
