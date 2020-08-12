@@ -1,0 +1,52 @@
+.my_services {
+  background-color: #6d6d6d;
+  background-image: url(../images/back.jpg);
+  color: $color-white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: multiply;
+  text-align: center;
+}
+
+.subtitle_serv {
+  background: none;
+}
+
+.title-serv {
+  color: $color-main;
+  position: relative;
+  top: 20px;
+}
+
+.title-serv::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  margin: 0.5em auto 1em;
+  background: $color-white;
+  opacity: 0.45;
+}
+
+.service {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.services {
+  margin-bottom: 2em;
+}
+
+@media (min-width: 800px) {
+  .services {
+    display: flex;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  //add the margin to is sibling class
+  .service + .service {
+    margin-left: 2em;
+  }
+}
