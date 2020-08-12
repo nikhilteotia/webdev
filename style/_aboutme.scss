@@ -1,0 +1,35 @@
+.about_me {
+  max-width: 1000px;
+}
+
+@media (min-width: 600px) {
+  .about_me {
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+    margin: 0 auto;
+  }
+  .title_about {
+    grid-area: title;
+  }
+
+  .subtitle_about {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(20 0px + 4em);
+  }
+
+  .img_mywork {
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
+}
