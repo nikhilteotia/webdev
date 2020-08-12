@@ -1,0 +1,198 @@
+// ---------------------------variable are here-------------------
+//------->>font family are here
+$primary-font: "Source Sans Pro", sans-serif;
+$secondary-font: "Source Code Pro", monospace;
+
+//------->>font weight are here
+$reg-font: 300;
+$bold-font: 900;
+
+//------>>font sizes are here
+$h1: 3rem;
+$h2: 2.25rem;
+$h3: 1.25rem;
+$body: 1rem;
+
+//------->> font sizes for bigger screens are here
+$h1-b: 4.5rem;
+$h2-b: 3.75rem;
+$h3-b: 1.5rem;
+$body-b: 1.125rem;
+
+//------->>font colors are here
+$color-main: #14cfae;
+$color-white: #ffffff;
+$color-dark: #303030;
+
+//--------------------------genreal css is here--------------------
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: $color-white;
+  color: $color-dark;
+  margin: 0rem;
+  font-family: $primary-font;
+  font-size: $body-b;
+}
+img {
+  display: block;
+  max-width: 100%;
+}
+
+section {
+  margin: 5em 0em;
+}
+
+main {
+  text-align: center;
+}
+
+//-----------------------typography------------------------------
+
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  margin: 0;
+}
+
+h1 {
+  font-size: $h1;
+}
+
+h2 {
+  font-size: $h2;
+}
+
+h3 {
+  font-size: $h3;
+}
+
+strong {
+  font-weight: $bold-font;
+}
+
+//--------->> title css is here
+.section_title {
+  margin-bottom: 0.25em;
+}
+
+.section_subtitle {
+  font-family: $secondary-font;
+  margin: 0rem;
+  padding: 0.5em 0.8em;
+  font-size: $h3;
+  background: $color-main;
+}
+
+//--------------->>intro section typo
+
+.title_intro {
+  font-weight: $reg-font;
+  strong {
+    display: block;
+  }
+}
+
+.subtitle_intro {
+  color: white;
+}
+
+//-------------------defult media querys------------------------
+
+//------------>>for 800px and above
+@media (min-width: 800px) {
+  h1 {
+    font-size: $h1-b;
+  }
+
+  h2 {
+    font-size: $h2-b;
+  }
+
+  h3 {
+    font-size: $h3-b;
+  }
+
+  body {
+    font-size: $body-b;
+    text-align: inherit;
+  }
+
+  .section_subtitle {
+    font-size: $h3-b;
+  }
+}
+
+//-------------------imports are here--------
+@import "head";
+@import "intro";
+@import "services";
+@import "aboutme";
+@import "mywork";
+
+//-------------------------buttons -----------------
+
+.btn {
+  display: inline-block;
+  padding: 1em 2.5em;
+  background: $color-main;
+  color: $color-dark;
+  text-decoration: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: $bold-font;
+  transition: transform 200ms ease-in-out;
+  margin-bottom: 2rem;
+}
+
+.btn:hover {
+  transform: scale(1.2);
+}
+
+// :focus {
+//   outline: 3px solid $color-white;
+//   outline-offset: 3px;
+// }
+
+//footer classes are here
+
+.footer {
+  background: #111;
+  color: $color-main;
+  text-align: center;
+  padding: 2.5em 0;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover {
+    color: gold;
+  }
+}
+
+.footer_link {
+  font-size: $h2;
+  font-weight: $bold-font;
+}
+
+.social_list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0 0;
+  padding: 0;
+}
+
+.social_item {
+  margin: 0 0.5em;
+  padding: 0.5em;
+}
