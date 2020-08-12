@@ -1,0 +1,39 @@
+.my_work {
+  background-color: $color-dark;
+  color: $color-white;
+  text-align: center;
+}
+
+.subtitle_work {
+  font-weight: $bold-font;
+  margin-bottom: 2em;
+}
+
+.portfolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin: 0 auto;
+}
+
+.portfolio_item {
+  background-color: $color-main;
+  margin: auto;
+  overflow: hidden;
+}
+
+.port_img {
+  background-color: $color-main;
+  transition: transform 750ms cubic-bezier(0.5, 0, 0.5, 1), opacity 250ms linear;
+}
+
+.port_img:hover {
+  transform: scale(1.1);
+  opacity: 0.5;
+}
+
+.portfolio_item:focus {
+  position: relative;
+  z-index: 2;
+  outline: 3px solid $color-main;
+  outline-offset: 3px;
+}
