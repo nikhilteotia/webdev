@@ -229,8 +229,7 @@ header {
     width: min-content;
     margin: 0rem auto;
     grid-column-gap: 1em;
-        grid-template-areas: "img title"
- "img subtitle";
+        grid-template-areas: "img title" "img subtitle";
     -ms-grid-columns: min-content max-content;
         grid-template-columns: -webkit-min-content -webkit-max-content;
         grid-template-columns: min-content max-content;
@@ -321,9 +320,7 @@ header {
     display: grid;
     -ms-grid-columns: 1fr 200px;
         grid-template-columns: 1fr 200px;
-        grid-template-areas: "title img"
- "subtitle img"
- "text img";
+        grid-template-areas: "title img" "subtitle img" "text img";
     grid-column-gap: 2em;
     margin: 0 auto;
   }
@@ -457,9 +454,9 @@ header {
   margin: 0 0.5em;
   padding: 0.5em;
 }
-/*# sourceMappingURL=defult.css.map */
 
-.btn:hover{
-	color: #333;
-	background-color: #41cba9;
+.alibaba {
+  background-color: #303030;
+  z-index: 100;
 }
+/*# sourceMappingURL=defult.css.map */
